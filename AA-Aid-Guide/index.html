@@ -1,0 +1,121 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>AA-Aid Walkthrough</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="AA-Aid-Guide"
+                  title="AA-Aid Walkthrough"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="AA-Aid? {#aa-aid}" duration="0">
+        <p><br>As members of the SUTD community, we are taught to design and build innovative products, to dive in and explore things that interest us, and to use our knowledge to creatively problem-solve. However, a common blocker that many of us face is unsurprisingly a lack of funding. In order to foster a greater culture of exploration and building, the SUTD Alumni Association has come up with AA-Aid - an open-source platform that supports SUTD&#39;s growing ecosystem through project funding.<br><br>This platform aims to solve the common issues of project funding, namely,  accountability, transparency, and longevity. As donors ourselves, we understand how futile it might feel to donate to a cause and not know what your money might be used for, or how much of it even went towards the cause. On the project side, many projects simply become one and done, with throwaway final products, destined to be repeated by a different group of juniors down the road.<br><br><br></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Objectives {#objectives}" duration="0">
+        <p><br>We want a system that optimises the allocation of project donations in a very transparent manner. AA-Aid intends to connect **managers **(project managers, event organisers, fifth row leaders, etc) with **supporters **(literally anyone willing to contribute!). Instead of the traditional method of donating directly to the organisation and giving it free reign, supporters can now pick and choose the projects that they feel are worth supporting. High quality projects that provide value to the community would naturally rise to the top and hit their budget goals. This would then hopefully incentivise submitting higher quality projects.<br><br>Each project would be required to provide a breakdown of their budget and clear objectives that need to be met. Funds will only be released to the projects once they prove that these objectives are met. This provides transparency in how they will be spending the money, and also accountability in that they are unable to claim the funds and abandon the project.<br><br>Even after it ends, if relevant, the project will be archived along with its various progress updates and the final product. Anyone would be able to access these files at any time, allowing for a continuous cycle of learning and building upon previous projects.<br><br>Of course, not all projects would be work related. AA-Aid can also support community events such as funding a community outing (after Covid measures have subsided of course), or sponsoring new basketballs for the basketball fifth row. The best part is that if you don&#39;t feel for any of these causes, you can simply choose not to participate in their funding!<br><br><br><br><code>Interested in the exact mechanisms and technologies we used to achieve this? We discuss them in detail here</code><br><br><br><br><br>—<br><br><br></p>
+<p><strong>Supporter Guide</strong> {#supporter-guide}<br></p>
+<p><br>Duration: 2:00<br><br><br></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Basic Donation {#basic-donation}" duration="0">
+        <p><br>This will be the simplest method of supporting projects<br><br><br><br></p>
+<ol type="1">
+<li>Browse through projects on the notion page.<br></li>
+<li>Once you see a project you like, take note of the <strong>Project Id.</strong></li>
+<li>Transfer the amount you want to donate to the SUTDAA QR code. (Please round your donation up to the nearest dollar)<br></li>
+<li>In the transfer description, include the Project Id and the name of the donor. You can leave an empty name if you want the donation to be anonymous.<br></li>
+<li>That&#39;s it! We will handle the rest and ensure that the project you supported receives your donations.<br></li>
+<li>You can check the amount donated along with your name on the project page after we are done processing it.<br><br><br><strong>Personal Address Donation</strong> {#personal-address-donation}<br><br>This method would require a Metamask wallet address, but will give you more flexibility in your donations.<br><br><br><br></li>
+<li>Make sure you have a metamask address. If you do not know how to create one, you can follow the step-by-step tutorial provided.<br></li>
+<li>Add the token to your metamask wallet. If you do not know how to do so, you can follow this step-by-step tutorial here (add link to tutorial)<br></li>
+<li>Transfer the amount you want to donate to the SUTDAA QR code. (Please round your donation up to the nearest dollar)<br></li>
+<li>In the transfer description, please include your address or ENS<br></li>
+<li>Once the donation is processed, tokens of an equivalent amount will be transferred to your metamask wallet.<br></li>
+<li>You can view your tokens in the **Assets **tab on metamask<br></li>
+<li>You can now browse through projects on the notion page and donate any amount of your tokens to any listed project.<br></li>
+<li>You can check the amount donated along with your name on the project page after the transaction is processed.<br><br><br><code>Create a metamask account tutorial here</code><br><br><br><br><br><br><br>—<br><br><br><strong>Project Guide</strong> {#project-guide}<br><br><br>—<br><br><br><strong>Technical Discussion</strong> {#technical-discussion}<br><br>This section will be discussing the technical aspects of AA-Aid along with our thoughts on certain design decisions that we made. If this does not interest you, feel free to move ahead to the next page!<br><br>At its core, AA-Aid is built on top of the ethereum blockchain.<br><br><br>—<br><br><br>Create A Metamask Account {#create-a-metamask-account}<br><br>Duration: 3:00<br><br>This tutorial will be tailored to the browser version of metamask. We recommend using the browser over the phone applications because they are known to be pretty buggy. If you do still choose to use the phone applications, the steps will still be the same.<br><br><br><br></li>
+<li>Download the Metamask browser extension from <a href="https://metamask.io/download.html" target="_blank">https://metamask.io/download.html</a>  (Supports Chrome, Firefox, Brave, Edge)<br></li>
+<li>Click on <code>Create a Wallet</code><img alt="alt_text" title="image_tooltip" src="img/fb8c5efdd92c0da0.png"></li>
+<li>Come up with a super secret password and agree to the Terms of Use<br></li>
+<li>Watch the video if that interests you, or just click on <code>Next</code></li>
+<li>Write down your Secret Recovery Phrase and <strong>Do Not</strong> share it with anyone ever. This phrase can be used to recover your wallet if you ever lose the credentials<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/538ced83038ff0d6.png"></li>
+<li>Once you click next, you will be prompted to write down your Secret Recovery Phrase in the correct order.<br></li>
+<li>That&#39;s it! Once you see this page, it means that your metamask wallet is up and running.<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/96efdf321d80a16.png"><br><br><br><br>—<br><br><br>Metamask Account Details and Configuration {#metamask-account-details-and-configuration}<br><br>Browser Extension: On the top right hand corner of the browser, you should be able to see this orange fox. Click on it to get a small pop up version of metamask.<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/e4a539ab525cc119.jpg"></li>
+<li>This is the network that you are currently using. You can switch between networks anytime.<br></li>
+<li>This displays your wallet address. This is the address that people will use to transfer tokens to you.<br></li>
+<li>This tells you whether or not your Metamask is connected to the website you are currently on<br></li>
+<li>This shows you how much Eth you have in your account. You will need some Eth to make transactions.<br><br><br><code>❗IMPORTANT: Change the network to Ropsten if you want to interact with AID tokens<br>AA-Aids does not use the Ethereum Mainnet, but instead uses the Ropsten Test Network, which means all tokens and Ether are not real. You will not be able to convert anything on the testnet to real cash, so don&#39;t try it. But this also means that all transaction fees will be f</code>ree!<br><br><br><br><br><br><br>—<br><br><br>Funding Your Wallet {#funding-your-wallet}<br><br>You will need some Ether to create a new transaction. Since we are using a test network, this means that the ETH is not real. There are faucets which provide free test Eth for you to play around with. The faucets are a bit finicky and might not always work, so try your luck with another if one doesn&#39;t work for you.<br><br><br>1. <a href="https://faucet.dimensions.network/" target="_blank">https://faucet.dimensions.network/</a> {#1-https-faucet-dimensions-network}<br></li>
+<li>Input your address and click on <code>Send Ropsten Eth</code> and complete the captcha<br></li>
+<li>Wait a few minutes and you should be credited Eth in your account<br><br><br><img alt="alt_text" title="image_tooltip" src="img/762284784e6f9694.png">2. <a href="https://faucet.ropsten.be/" target="_blank">https://faucet.ropsten.be/</a> {#2-https-faucet-ropsten-be}<br></li>
+<li>Input your address and click on <code>Send me test Ether</code></li>
+<li>Wait a few minutes and you should be credited Eth in your account<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/6fa5748db3d3cfde.png">3. <a href="https://faucet.metamask.io/" target="_blank">https://faucet.metamask.io/</a> {#3-https-faucet-metamask-io}<br></li>
+<li>Click on the green button <code>request 1 Ether from faucet</code><img alt="alt_text" title="image_tooltip" src="img/484fddbd38207178.png"></li>
+<li>Connect your metamask account<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/74a7a3cea15ed152.png"></li>
+<li>Wait a few minutes and you should be credited 1 Eth in your account<br><br><br>—<br><br><br>Adding Token to Metamask {#adding-token-to-metamask}<br></li>
+<li>Make sure you have switched to <strong>Ropsten Test Network</strong></li>
+<li>In the Metamask extension, click on the <code>Assets</code>tab<br></li>
+<li>If you are on chrome, click on <code>Add Token</code>and skip to step 4<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/1cabe5ae04fa065c.png"></li>
+<li>If you are on firefox, click on <code>Import Tokens</code><img alt="alt_text" title="image_tooltip" src="img/18b50d28bf23ca0f.png"></li>
+<li><code>Token Contract Address:</code> 0x737aEfd845B279eA8e2Ec9c0cd897d9d4ad49D11<br></li>
+<li><code>Token Symbol:</code>should be auto filled after contract address is entered<br></li>
+<li><code>Token Decimal:</code>1<br></li>
+<li>Click on next and it should show you the token name<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/979ffc426c4fe6af.png"></li>
+<li>Finish by clicking on <code>Import Tokens</code> and you should get this screen<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/6eb09ae49c414a73.png"></li>
+<li>Congrats, you can now start receiving and sending AID tokens!<br><br><br>—<br><br><br>Creating an Ethereum Name Service {#creating-an-ethereum-name-service}<br>What is an Ethereum Name Service (ENS) and why is it useful? {#what-is-an-ethereum-name-service-ens-and-why-is-it-useful}<br><br>Traditionally, an Ethereum address is a very long string of random characters that looks like this: <code>0x49c6a7f9F3755C810d5DDFaf029817742C46BE2b.</code>This address is pretty difficult to remember  and is not easily identifiable. You can register your wallet address to an ENS like <code>sutdaa.eth</code> which creates a two way mapping between your wallet address and your short name. This means that you can now interact with smart contracts with your shortened name. Think of it as instead of having to type in 69.171.250.35 (Facebook&#39;s ip address) in your browser every time you want to rant about your terrible day, all you need to do is type in facebook.com which then reroutes you to the same Facebook page.<br><br>We want to use ENS so that it becomes easier to identify which projects belong to which addresses. For example, if a supporter wants to identify <br><br><br><br><code>tl;dr: ENS helps map 0x49c6a7f9F3755C810d5DDFaf029817742C46BE2b to sutdaa.eth  to make it easy to remember and identify<br><br></code>How to create an ENS? {#how-to-create-an-ens}<br></li>
+<li>Firstly, you need an address to call your own. This can be done simply by creating a metamask account. If you haven&#39;t already done so, go look at our previous tutorial!<br></li>
+<li>Your account needs to be funded with a little test ETH. You can follow this faucet tutorial if you are testnet broke.<br></li>
+<li>Navigate to <a href="https://app.ens.domains/" target="_blank">https://app.ens.domains/</a> and click the connect button on the top left. Make sure that your metamask account has already been switched to the Ropsten Test Network before connecting!<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/e93e301e7d65521a.png"></li>
+<li>The site will prompt you to connect with your ethereum wallet. Click on metamask and select your account<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/551a89c5a175d009.png"></li>
+<li>Once you have connected, you should notice the top left now says Ropsten Network, along with your wallet address<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/63484b6282dd758e.png"></li>
+<li>Search the ENS you want inside the Search Bar<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/d1e3f3adedf2bcd7.png"></li>
+<li>Click on the name that appears after you search<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/b9e32347a2cf6352.png"></li>
+<li>If you get this page, it means that the name has already been taken. Go back to the previous page and search for another one!<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/45ecbc4c1f524e83.png"></li>
+<li>If you get this page, that means you can register this name as yours!<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/ae3d97da142ccc4a.png"></li>
+<li>Change the number of years if you want. The longer it is the longer you can keep the name for, but the more test ETH it will cost. Click on <code>request to register</code> when you&#39;re ready.<br></li>
+<li>A metamask transaction should pop up. Click <code>confirm</code></li>
+<li>Wait for the transaction to be confirmed<br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/cbbd51fb5ae494b.png"></li>
+<li>Once done, you should start to see the green bar fill. Wait for a minute<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/342d40b89c4fd8f3.png"></li>
+<li>When the green bar stops moving, the register button should light up blue. Click on <code>register</code><img alt="alt_text" title="image_tooltip" src="img/bdd57e483d18c4e0.png"></li>
+<li>A second transaction should pop up. Go ahead and confirm it.<br></li>
+<li>Click on <code>set reverse record</code><img alt="alt_text" title="image_tooltip" src="img/a182d711ebe8247.png"></li>
+<li>Select your newly created ENS in the drop down menu and click <code>save</code><img alt="alt_text" title="image_tooltip" src="img/1760c8b648457dd5.png"></li>
+<li>Again, confirm the metamask transaction<br></li>
+<li>You should see this message saying that the reverse record was set. And you&#39;re done! You can now use your ENS and your address interchangeably.<br><br><br><br><br><img alt="alt_text" title="image_tooltip" src="img/8b18ab8e6d4e1640.png"><br><br><br><br><br>—<br><br><br>Interacting with the Smart Contract {#interacting-with-the-smart-contract}<br>Supporters {#supporters}<br>Projects {#projects}<br></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
