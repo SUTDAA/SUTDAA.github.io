@@ -3,22 +3,36 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2021-10-17T06:50:50Z",
-  "id": "AA-Aid-Guide",
-  "duration": 0,
+  "updated": "2021-10-17T06:16:41Z",
+  "id": "aa-aid-guide",
+  "duration": 5,
   "title": "AA-Aid Walkthrough",
   "authors": "SUTD Alumni Association",
   "summary": "This codelab is a guide for the SUTDAA Aid Platform, and contains guides for setting up an Ethereum account.",
-  "source": "guide.md",
-  "theme": "",
+  "source": "1Ydzjxv2LQhouXRET0ilV5DoKhldlg5iDzJcwVPd0uOw",
+  "theme": "web",
   "status": [
     "published"
   ],
   "category": [
-    "meta"
+    "web"
   ],
   "tags": [
-    "beginner"
+    "cds17",
+    "chrome-dev-summit-2016",
+    "devfest18",
+    "gdd17",
+    "io2016",
+    "io2017",
+    "io2018",
+    "io2019",
+    "jsconfeu",
+    "kiosk",
+    "pwa-dev-summit",
+    "pwa-roadshow",
+    "tag-web",
+    "typtwd17",
+    "web"
   ],
-  "url": "AA-Aid-Guide"
+  "url": "aa-aid-guide"
 }
